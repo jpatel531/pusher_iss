@@ -2,9 +2,9 @@ var Pusher = require("pusher");
 var secrets = require('./secrets')
 
 var pusher = new Pusher({
-  appId: secrets.pusherId,
-  key: secrets.pusherKey,
-  secret: secrets.pusherSecret
+  appId: process.env.PUSHER_ID || secrets.pusherId,
+  key: process.env.PUSHER_KEY || secrets.pusherKey,
+  secret: process.env.PUSHER_SECRET || secrets.pusherSecret
 });
 
 module.exports = pusher;
