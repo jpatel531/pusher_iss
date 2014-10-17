@@ -1,5 +1,8 @@
 var Pusher = require("pusher");
-var secrets = require('./secrets')
+
+if (!process.env.PUSHER_ID) {
+	var secrets = require('./secrets');
+}
 
 var pusher = new Pusher({
   appId: process.env.PUSHER_ID || secrets.pusherId,
