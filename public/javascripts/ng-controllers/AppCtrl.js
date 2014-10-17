@@ -14,7 +14,9 @@ angular.module('PusherISS', ['pusher-angular']).controller('AppCtrl', ['$scope',
 		console.log("Receiving event...")
 		$scope.iss = data
 		$scope.path.push([$scope.iss.iss_position.latitude, $scope.iss.iss_position.longitude])
-	})
+	});
+
+
 
 }]);
 
