@@ -1,7 +1,30 @@
+@import url('http://fonts.googleapis.com/css?family=PT+Mono');
+
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-family: 'PT Mono' !important ;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+	font-size: 42px !important
+}
+
+.title-wrapper {
+	width: 100%;
+	position: absolute;
+	z-index: 1000000;
+	background-color: rgba(255,255,255,0.6);
+}
+
+#map {
+	width: 100vw;
+	height: 50vh;
+}
+
+iframe.stream {
+	width: 100vw; 
+	height: 50vh;
 }
