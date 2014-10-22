@@ -6,15 +6,6 @@ var request = require('request');
 
 var issData = {}
 
-// Request Handlers
-
-router.get('/location', function(req, res){
-	getISSData(function(data){
-		res.json(data);
-	});
-});
-
-
 module.exports = router;
 
 var getISSData = function(callback){
@@ -30,7 +21,7 @@ var sendISSData = function(){
 	realTimeIss();
 };
 
-
+// Calling itself
 var realTimeIss = function(){
 	setTimeout(function(){
 		getISSData(function(){

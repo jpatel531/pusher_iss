@@ -1,4 +1,4 @@
-angular.module('PusherISS').directive('googleMap', function($timeout){
+angular.module('PusherISS').directive('issMap', function($timeout){
 
 	return {
 		link: function(scope, el, attrs){

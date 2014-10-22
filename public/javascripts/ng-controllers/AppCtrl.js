@@ -6,10 +6,6 @@ angular.module('PusherISS', ['pusher-angular']).controller('AppCtrl', ['$scope',
 
 	$scope.path = []
 
-	$http.get('/api/location').success(function(data){
-		$scope.iss = data;
-	});
-
 	issChannel.bind('new-location', function(data){
 		console.log("Receiving event...")
 		$scope.iss = data
