@@ -19,35 +19,3 @@ angular.module('PusherISS', ['pusher-angular']).controller('AppCtrl', ['$scope',
 
 
 }]);
-
-angular.module('PusherISS').directive('googleMap', function($timeout){
-
-	return {
-		link: function(scope, el, attrs){
-
-			var map = new GMaps({
-				div: attrs.id,
-				zoom: 4,
-				lat: 0,
-				lng: 0
-			});
-
-			$timeout(function(){
-				map.setCenter(scope.iss.iss_position.latitude, scope.iss.iss_position.longitude)
-			}, 2000)
-
-
-			scope.$watch('path', function(){
-
-				map.drawPolyline({
-					path: scope.path,
-					strokeColor: 'black',
-					strokeOpacity: 1,
-					strokeWeight: 15
-				});
-
-			}, true);
-		}
-	}
-
-});
