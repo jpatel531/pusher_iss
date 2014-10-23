@@ -28,7 +28,7 @@ angular.module('MyApp', ['pusher-angular'] )
 // Then inject the $pusher service into MyCtrl
 
 .controller('MyCtrl', ['$scope', '$pusher', function($scope, $pusher){
-	// ...
+	// code goes here...
 }]);
 ```
 
