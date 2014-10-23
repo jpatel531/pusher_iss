@@ -6,7 +6,7 @@ NASA, with space always being one of my great fascinations, seemed a natural pla
 
 ## Using The API With AngularJS
 
-Firstly, we need to include AngularJS, Pusher, and Pusher-Angular within our application HTML file. 
+Firstly, we need to include AngularJS, Pusher, and Pusher-Angular within our HTML file. 
 
 ```html
 <!-- AngularJS -->
@@ -22,7 +22,7 @@ Firstly, we need to include AngularJS, Pusher, and Pusher-Angular within our app
 Now in our javascript we need to set up an Angular application and controller.
 
 ```javascript
-// Inject 'pusher-angular' into the application's dependencies
+// Inject 'pusher-angular' as a dependency
 angular.module('MyApp', ['pusher-angular'] )
 
 // Then inject the $pusher service into MyCtrl
@@ -32,7 +32,7 @@ angular.module('MyApp', ['pusher-angular'] )
 }]);
 ```
 
-Within our controller, setting up our Pusher client to talk to the API should be very straightforward:
+Within our controller, setting up our Pusher client to talk to the API should be fairly straightforward:
 
 ```javascript
 var client = new Pusher('fa15651bc1ad6c916fc7');
@@ -65,7 +65,7 @@ issChannel.bind('new-location', function(iss){
 
 And there you have it: a live feed of the whereabouts of the International Space Station using Pusher and AngularJS.
 
-##Try The Demo And Build Your Own Application!
+##Try The Demo And Build Something!
 
 Check out [Where Is The ISS?](http://where-is-the-iss.herokuapp.com) to have a peek at the demo. It tracks the coordinates of the International Space Station on a map, while below you can see NASA's live stream of shots taken by cameras on the exterior of the station.
 
