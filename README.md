@@ -51,9 +51,10 @@ Now we can log out the data from the 'new-location' event triggered by the API i
 issChannel.bind('new-location', function(iss){
 	console.log(iss);
 });
-
+```
 In the console, this will print out:
 
+```
 {
 	"timestamp":1414058029,
 	"message":"success",
