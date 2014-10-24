@@ -52,15 +52,17 @@ issChannel.bind('new-location', function(iss){
 	console.log(iss);
 });
 
-// {
-// 	"timestamp":1414058029,
-// 	"message":"success",
-// 	"iss_position":
-// 		{
-// 			"latitude":-31.90622125481199,
-// 			"longitude":-25.751114321984957
-// 		}
-// }
+In the console, this will print out:
+
+{
+	"timestamp":1414058029,
+	"message":"success",
+	"iss_position":
+		{
+			"latitude":-31.90622125481199,
+			"longitude":-25.751114321984957
+		}
+}
 ```
 
 And there you have it: a live feed of the whereabouts of the International Space Station using Pusher and AngularJS.
