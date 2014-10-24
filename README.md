@@ -54,7 +54,7 @@ issChannel.bind('new-location', function(iss){
 ```
 In the console, this will print out:
 
-```
+```javascript
 {
 	"timestamp":1414058029,
 	"message":"success",
