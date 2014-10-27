@@ -32,7 +32,7 @@ angular.module('MyApp', ['pusher-angular'] )
 }]);
 ```
 
-Within our controller, setting up our Pusher client to talk to the API should be fairly straightforward:
+Within our controller, setting up our Pusher client to talk to the API should be fairly straightforward. Simply instantiate a new Pusher object (with the key for the ISS API), and pass it into the `$pusher` service.
 
 ```javascript
 var client = new Pusher('fa15651bc1ad6c916fc7');
