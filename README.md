@@ -1,5 +1,7 @@
 # Realtime International Space Station API with AngularJS
 
+![Image 2](https://raw.githubusercontent.com/jpatel531/pusher_iss/master/screenshots/header.jpg)
+
 It's my first week at Pusher and, intrigued by Pusher's [realtime Reddit feed](http://blog.pusher.com/pusher-realtime-reddit-api/), I wanted to have a go at making my first Websockets API. Being a huge fan of AngularJS, I also wanted to see for myself how simple it is to make the framework realtime with Pusher's new Angular library. 
 
 NASA, with space always being one of my great fascinations, seemed a natural place to turn to. Upon visiting NASA's data bank, I found that [Open-Notify.org had crunched NASA's raw International Space Station location data into a JSON API](http://open-notify.org/Open-Notify-API/ISS-Location-Now/). Perfect, I thought, as it would be a chance to get some frequently updated data and stream it with the power of Websockets.
@@ -72,7 +74,7 @@ And there you have it: a live feed of the whereabouts of the International Space
 
 Check out [Where Is The ISS?](http://where-is-the-iss.herokuapp.com) to have a peek at the demo. It tracks the coordinates of the International Space Station on a map, while below you can see NASA's live stream of shots taken by cameras on the exterior of the station.
 
-![Image 1](https://raw.githubusercontent.com/jpatel531/pusher_iss/master/screenshots/iss.jpg)
+![Image 1](https://raw.githubusercontent.com/jpatel531/pusher_iss/master/screenshots/iss.gif)
 
 Feel more than free to make your own application with this API and [let us know when you have](https://twitter.com/pusher). We'd love to see what more you can do with it!
 
